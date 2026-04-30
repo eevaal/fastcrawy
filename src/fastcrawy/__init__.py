@@ -1,2 +1,3 @@
-def hello() -> str:
-    return "Hello from fastcrawy!"
+from .core import FastCrawyEngine
+
+__all__ = ["FastCrawyEngine"]
