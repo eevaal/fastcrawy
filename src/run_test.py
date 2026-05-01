@@ -1,10 +1,21 @@
-from fastcrawy import FastCrawyEngine
+from fastpoint import fp
 
-fc = FastCrawyEngine()
+@fp.endpoint("/get-test", "GET", tags=["FastPoint GET Test"])
+def get_test():
+    payload = {
+        "test": "test",
+        "test2": "test2",
+        "test3": "test3",
+        "test4": "test4",
+        "test5": "test5",
+        "test6": "test6",
+        "test7": "test7"
+    }
+    return payload
 
-@fc.endpoint("/", "GET", tags=["FastCrawy Test"])
-def run_test():
-    return {"Hello": "World"}
+@fp.endpoint("/post-test", "POST", tags=["FastPoint POST Test"])
+def post_test():
+    ...
 
 if __name__ == "__main__":
-    fc.run()
+    fp.run()

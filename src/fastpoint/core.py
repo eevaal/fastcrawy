@@ -1,7 +1,7 @@
 import uvicorn
 from fastapi import FastAPI
 
-class FastCrawyEngine:
+class FastPoint:
     def __init__(self):
         self.app = FastAPI()
 
@@ -17,5 +17,7 @@ class FastCrawyEngine:
         return decorator
 
     def run(self, host: str = "127.0.0.1", port: int = 8000, **kwargs):
-        print(f"Запуск FastCrawy на http://{host}:{port}")
+        print(f"Запуск FastPoint на http://{host}:{port}")
         uvicorn.run(self.app, host=host, port=port, **kwargs)
+
+fp = FastPoint()
