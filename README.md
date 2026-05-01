@@ -8,11 +8,6 @@
   <p align="center">
     <b>Библиотека, упрощающая работу с FastAPI</b>
     <br />
-    <a href="#-демо">Посмотреть демо</a>
-    ·
-    <a href="#-фичи">Фичи</a>
-    ·
-    <a href="#-запуск">Запуск</a>
   </p>
   
   ![Python](https://img.shields.io/badge/python-3.13-blue?style=for-the-badge&logo=python&logoColor=white)
