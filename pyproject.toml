@@ -1,6 +1,6 @@
 [project]
-name = "fastcrawy"
-version = "0.1.0"
+name = "fastpoint"
+version = "0.0.1"
 description = "Add your description here"
 readme = "README.md"
 authors = [

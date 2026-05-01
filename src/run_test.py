@@ -1,6 +1,6 @@
 from fastpoint import fp
 
-@fp.endpoint("/get-test", "GET", tags=["FastPoint GET Test"])
+@fp.endpoint("GET", tags=["FastPoint GET Test"])
 def get_test():
     payload = {
         "test": "test",
@@ -14,7 +14,7 @@ def get_test():
     return payload
 
 @fp.endpoint("/post-test", "POST", tags=["FastPoint POST Test"])
-def post_test():
+async def post_test():
     ...
 
 if __name__ == "__main__":

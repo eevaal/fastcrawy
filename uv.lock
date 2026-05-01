@@ -71,8 +71,8 @@ wheels = [
 ]
 
 [[package]]
-name = "fastcrawy"
-version = "0.1.0"
+name = "fastpoint"
+version = "0.0.1"
 source = { editable = "." }
 dependencies = [
     { name = "fastapi" },
