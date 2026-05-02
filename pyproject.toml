@@ -1,7 +1,7 @@
 [project]
 name = "fastpoint"
-version = "0.0.1"
-description = "Add your description here"
+version = "0.1.0"
+description = "FastPoint is a micro-framework that turns your functions into production-ready FastAPI endpoints with zero boilerplate."
 readme = "README.md"
 authors = [
     { name = "Matthew Noates", email = "113374899+realnoates@users.noreply.github.com" }
@@ -15,3 +15,12 @@ dependencies = [
 [build-system]
 requires = ["uv_build>=0.9.11,<0.10.0"]
 build-backend = "uv_build"
+
+[project.urls]
+Homepage = "https://github.com/eevaal/fastpoint"
+
+keywords = ["fastapi", "wrapper", "api", "easy-to-use", "fastpoint"]
+
+license = { text = "MIT" }
+
+
