@@ -1,3 +1,6 @@
+import webbrowser
+from threading import Timer
+
 import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -29,6 +32,7 @@ class FastPoint:
     def run(self, host: str = "127.0.0.1", port: int = 8000, **kwargs):
         print(f"Запуск FastPoint на http://{host}:{port}")
         print(f"Документация FastPoint доступна на http://{host}:{port}/docs")
+        Timer(1.5, lambda: webbrowser.open(f"http://{host}:{port}/docs")).start()
         uvicorn.run(self.app, host=host, port=port, **kwargs)
 
 fp = FastPoint()
