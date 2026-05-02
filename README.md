@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/evaal/fastpoint">
+  <a href="https://github.com/eevaal/fastpoint">
     <img src="fastpoint.png" alt="Logo" width="128" height="128">
   </a>
 
